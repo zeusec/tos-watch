@@ -18,9 +18,7 @@ c. the return/residential address registered to their Stake.us account;
 
 d. the email address registered to their Stake.us account;
 
-e. clearly placed word "CODE:" followed by the unique postcard code (
-generated here
-). This code is unique to each customer and must not be shared with other customers; and
+e. clearly placed word "CODE:" followed by the unique postcard code ( generated here ). This code is unique to each customer and must not be shared with other customers; and
 
 f. the following statement:
 
