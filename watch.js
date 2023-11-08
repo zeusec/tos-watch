@@ -111,6 +111,12 @@ const sites = [
       url: 'https://luckylandcasino.zendesk.com/hc/en-us/articles/360000868688-Official-Sweeps-Rules-',
       startSection: '3. HOW TO COLLECT SWEEPS COINS',
       endSection: '4. USING SWEEPS COINS TO PLAY GAMES'
+    },
+    {
+      name: 'fliff',
+      url: 'https://www.getfliff.com/sweepstakes-rules',
+      startSection: '2. HOW TO COLLECT FLIFF CASH',
+      endSection: '3. There is a limit of one request per outer envelope.'
     }
   ];
   
