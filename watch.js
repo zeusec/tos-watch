@@ -80,17 +80,18 @@ function sendDiscordNotification(siteName, changes) {
     return content;
   }  
 
-function compareTexts(oldText, newText) {
-  const diff = Diff.diffLines(oldText, newText);
-  const changes = [];
-  for (const part of diff) {
-    const symbol = part.added ? '+ ' : part.removed ? '- ' : '';
-    if (symbol) {
-      changes.push(symbol + part.value.trim());
+  function compareTexts(oldText, newText) {
+    const normalizeText = (text) => text.replace(/\s+/g, ' ').trim();
+    const diff = Diff.diffWords(normalizeText(oldText), normalizeText(newText));
+    const changes = [];
+    for (const part of diff) {
+      const symbol = part.added ? '+ ' : part.removed ? '- ' : '';
+      if (symbol) {
+        changes.push(symbol + part.value.trim());
+      }
     }
+    return changes.join('\n');
   }
-  return changes.join('\n');
-}
 
 const sites = [
     {
